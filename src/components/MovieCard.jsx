@@ -2,7 +2,7 @@ import React from "react";
 import "../css/MovieCard.css"; // Assuming you have a CSS file for styling
 import { useMovieContext } from "../contexts/MovieContext"; // Import the context
 
-export default function MovieCard({ movie }) {
+function MovieCard({ movie }) {
   const { addFavourite, isFavourite, removeFavourite } = useMovieContext();
 
   const favourite = isFavourite(movie.id);
@@ -43,4 +43,7 @@ export default function MovieCard({ movie }) {
     </div>
   );
 }
+
+// Memoize the component to prevent unnecessary re-renders
+export default React.memo(MovieCard);
 

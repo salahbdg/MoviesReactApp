@@ -16,5 +16,5 @@ npm run build
 
 Here are some screen shots of the app
 
-![alt text](/frontend/src/assets/image.png)
-![alt text](/frontend/src/assets/image-1.png)
+![alt text](src/assets/image.png)
+![alt text](/src/assets/image-1.png)
